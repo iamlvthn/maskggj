@@ -1,0 +1,35 @@
+{
+    "id": "52c9f9db-e48c-468a-a6be-fcc099b37ec0",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "MainMap",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 5000,
+        "borderHeight": 5000
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "076d5f3a-254a-425f-be6f-b692895900c3",
+            "label": "image_1",
+            "texture": {
+                "key": "internetbg"
+            },
+            "x": 1905,
+            "y": 2367,
+            "scaleX": 5000,
+            "scaleY": 5000
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

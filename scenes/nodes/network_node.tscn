@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://3xh4oqjh0uyv"]
+
+[ext_resource type="Script" uid="uid://384j5h6p4fpp" path="res://scripts/network_node.gd" id="1_in360"]
+
+[node name="NetworkNode" type="Area2D" unique_id=35339453]
+script = ExtResource("1_in360")

@@ -5,6 +5,28 @@
                 "url": "assets/FufuSuperDino.png",
                 "type": "image",
                 "key": "FufuSuperDino"
+            },
+            {
+                "url": "assets/honeypoticon.png",
+                "type": "image",
+                "key": "honeypoticon"
+            },
+            {
+                "url": "assets/hosticon.png",
+                "type": "image",
+                "key": "hosticon"
+            },
+            {
+                "url": {
+                    "IMG": "assets/internetbg.png"
+                },
+                "type": "texture",
+                "key": "internetbg"
+            },
+            {
+                "url": "assets/routericon.png",
+                "type": "image",
+                "key": "routericon"
             }
         ]
     },
@@ -12,6 +34,8 @@
         "app": "Phaser Editor 2D - Asset Pack Editor",
         "contentType": "phasereditor2d.pack.core.AssetContentType",
         "url": "https://phasereditor2d.com",
-        "version": 2
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
     }
 }

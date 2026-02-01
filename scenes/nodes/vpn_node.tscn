@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://catsgeltp31rc"]
+
+[ext_resource type="Script" uid="uid://ca7lmrncia64v" path="res://scripts/vpn_node.gd" id="1_x8smy"]
+
+[node name="NetworkNode" type="Area2D" unique_id=35339453]
+script = ExtResource("1_x8smy")

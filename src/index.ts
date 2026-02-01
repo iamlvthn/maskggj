@@ -1,7 +1,9 @@
 import Phaser from "phaser";
-import Level from "./scenes/Level";
+import MainMap from "./scenes/MainMap";
 import preloadAssetPackUrl from "../static/assets/preload-asset-pack.json";
 import Preload from "./scenes/Preload";
+import OverlayUI from "./scenes/OverlayUI";
+import PrestigeScreen from "./scenes/PrestigeScreen";
 
 class Boot extends Phaser.Scene {
 
@@ -11,7 +13,7 @@ class Boot extends Phaser.Scene {
 
     preload() {
 
-        this.load.pack("pack", preloadAssetPackUrl);
+        this.load.pack("pack", preloadAssetPackUrl as unknown as string);
     }
 
     create() {
@@ -30,7 +32,7 @@ window.addEventListener('load', function () {
 			mode: Phaser.Scale.ScaleModes.FIT,
 			autoCenter: Phaser.Scale.Center.CENTER_BOTH
 		},
-		scene: [Boot, Preload, Level]
+		scene: [Boot, Preload, MainMap, OverlayUI, PrestigeScreen]
 	});
 
 	game.scene.start("Boot");

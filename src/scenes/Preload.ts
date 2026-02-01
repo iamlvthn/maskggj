@@ -56,7 +56,7 @@ export default class Preload extends Phaser.Scene {
 
 		this.editorCreate();
 
-		this.load.pack("asset-pack", assetPackUrl);
+		this.load.pack("asset-pack", assetPackUrl as unknown as string);
 
 		const width = this.progressBar.width;
 
@@ -81,7 +81,8 @@ export default class Preload extends Phaser.Scene {
 			}
 		}
 
-		this.scene.start("Level");
+		this.scene.start("MainMap");
+		this.scene.launch("OverlayUI");
 	}
 
 	/* END-USER-CODE */

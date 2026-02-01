@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b2lhunhm20lnr"]
+
+[ext_resource type="Script" uid="uid://3eo0kdw2el7d" path="res://scripts/router_node.gd" id="1_ovybf"]
+
+[node name="NetworkNode" type="Area2D" unique_id=35339453]
+script = ExtResource("1_ovybf")

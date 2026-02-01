@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://mwd23dedcltc"]
+
+[ext_resource type="FontFile" uid="uid://d12udhddejad1" path="res://assets/font/ms-sans-serif-1.otf" id="1_gwk6t"]
+[ext_resource type="Script" uid="uid://dgwe7nasbnw08" path="res://scripts/game_ui.gd" id="1_xjfbv"]
+[ext_resource type="Theme" uid="uid://bgixr7l8ox83l" path="res://assets/w95theme.tres" id="3_bma8u"]
+
+[node name="GameUI" type="CanvasLayer" unique_id=2079976077]
+script = ExtResource("1_xjfbv")
+
+[node name="UIContainer" type="Control" parent="." unique_id=1878751354]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BandwidthLabel" type="Label" parent="UIContainer" unique_id=837245173]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 55.0
+offset_right = 193.0
+offset_bottom = 82.0
+theme_override_fonts/font = ExtResource("1_gwk6t")
+theme_override_font_sizes/font_size = 24
+text = "Bandwidth: 0"
+uppercase = true
+
+[node name="BuyHostButton" type="Button" parent="UIContainer" unique_id=446742830]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 95.0
+offset_right = 170.0
+offset_bottom = 135.0
+theme = ExtResource("3_bma8u")
+theme_override_fonts/font = ExtResource("1_gwk6t")
+text = "BUY HOST (5$)"
+
+[node name="BuyVPNButton" type="Button" parent="UIContainer" unique_id=956151237]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 213.0
+offset_right = 172.0
+offset_bottom = 253.0
+theme = ExtResource("3_bma8u")
+text = "BUY VPN (15$)"
+
+[node name="BuyRouterButton" type="Button" parent="UIContainer" unique_id=1198252418]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 155.0
+offset_right = 170.0
+offset_bottom = 195.0
+theme = ExtResource("3_bma8u")
+theme_override_fonts/font = ExtResource("1_gwk6t")
+text = "BUY ROUTER (10$)"
+
+[node name="ColorRect" type="ColorRect" parent="UIContainer" unique_id=1437441516]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 40.0
+color = Color(0.7607843, 0.7607843, 0.7607843, 1)
+
+[node name="ColorRect" type="ColorRect" parent="UIContainer/ColorRect" unique_id=775869354]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1150.0
+offset_bottom = 38.0
+color = Color(0.11764706, 0, 0.5019608, 1)

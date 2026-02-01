@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dyuxt0wger0i2"]
+
+[ext_resource type="PackedScene" uid="uid://mwd23dedcltc" path="res://scenes/ui/game_ui.tscn" id="2_r0du0"]
+[ext_resource type="PackedScene" uid="uid://58oomxjibsqr" path="res://GameWorld.tscn" id="2_uu6xs"]
+
+[node name="Main" type="Node2D" unique_id=16765795]
+
+[node name="GameWorld" type="Node2D" parent="." unique_id=1739419708]
+
+[node name="Node2D" parent="GameWorld" unique_id=725760761 instance=ExtResource("2_uu6xs")]
+
+[node name="GameUI" parent="." unique_id=2079976077 instance=ExtResource("2_r0du0")]
